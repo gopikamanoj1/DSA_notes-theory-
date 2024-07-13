@@ -1,0 +1,36 @@
+.adaptive and non adaptive sorting------------------------------------------------------
+
+
+In the context of sorting algorithms, "adaptive" and "non-adaptive" refer to the behavior 
+of the algorithm based on the initial order of the input data.
+
+1. **Adaptive Sorting**: An adaptive sorting algorithm takes advantage of the existing order 
+or partial order of the input data to improve its performance. It detects if the data is already
+ partially sorted and optimizes the sorting process accordingly.
+
+2. **Non-Adaptive Sorting**: A non-adaptive sorting algorithm does not consider the initial 
+order of the input data and performs the same set of operations regardless of the data's initial order.
+
+The adaptiveness of a sorting algorithm is related to its efficiency in different scenarios. 
+An adaptive sorting algorithm can be beneficial when the input data is already partially sorted 
+or has some inherent order. It can avoid unnecessary comparisons and swaps, resulting in improved performance.
+
+On the other hand, a non-adaptive sorting algorithm performs the same operations regardless of the
+ initial order of the data. It may not take advantage of any existing order, which can result in 
+ unnecessary comparisons and swaps even when the data is partially sorted.
+
+It's important to note that whether a sorting algorithm is adaptive or non-adaptive depends on the
+ specific implementation and the algorithm's design. Some sorting algorithms can be modified to 
+ incorporate adaptiveness, while others are inherently non-adaptive.
+
+Examples of adaptive sorting algorithms:
+- Insertion Sort: It performs well when the data is already partially sorted or has small inversions.
+- Bubble Sort: It can be adaptive if it terminates early when the array is already sorted.
+
+Examples of non-adaptive sorting algorithms:
+- Merge Sort: It performs the same set of operations regardless of the initial order of the data.
+- Heap Sort: It constructs a heap from the data without considering any existing order.
+
+The adaptiveness of a sorting algorithm can be an important consideration when choosing the most efficient
+ algorithm for a specific scenario, depending on the nature and initial order of the data.
+

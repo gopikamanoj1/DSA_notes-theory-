@@ -1,0 +1,37 @@
+.complexity of hashtable-------------------------------------------------------
+
+The time complexity of hashtable operations depends on several factors, including the specific
+ implementation and the quality of the hash function used. In general, the average-case time
+  complexity of hashtable operations is O(1), which means they can be performed in constant time on average.
+
+Here are the time complexities for common hashtable operations:
+
+1. **Insertion (Put)**: O(1) average-case time complexity. The hash function determines 
+the index where the key-value pair is stored, and the insertion can be done in constant 
+time if there are no collisions.
+
+2. **Retrieval (Get)**: O(1) average-case time complexity. The hash function is used to 
+locate the index of the key in the hashtable, and the value can be retrieved in constant 
+time if there are no collisions.
+
+3. **Deletion (Remove)**: O(1) average-case time complexity. Similar to retrieval, the hash
+ function is used to locate the index of the key, and the key-value pair can be removed in 
+ constant time if there are no collisions.
+
+However, it's important to note that in the worst case, when there are many collisions, the time 
+complexity can degrade to O(n), where n is the number of elements in the hashtable. This worst-case
+ scenario occurs when all elements hash to the same index and form long chains or lists, 
+ requiring a linear search within each chain.
+
+To mitigate collisions and maintain efficient performance, various collision resolution techniques like
+ chaining (using linked lists or other data structures) or open addressing (probing sequences like
+  linear probing, quadratic probing, or double hashing) can be employed. These techniques aim to 
+  distribute the elements more evenly and reduce the likelihood of collisions.
+
+In terms of space complexity, hashtables typically have a space complexity of O(n), where n is the number
+ of elements stored in the hashtable. This accounts for the space required to store the key-value pairs
+  and any additional data structures used for collision resolution.
+
+Overall, hashtables provide efficient average-case performance for insertion, retrieval, and deletion
+ operations, making them a popular choice for implementing associative arrays or dictionaries in various programming scenarios.
+

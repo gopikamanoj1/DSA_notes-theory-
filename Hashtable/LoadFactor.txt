@@ -1,0 +1,30 @@
+.what is load factor---------------------------------------------------------------------
+
+
+Load factor is a measure used to determine the fullness or occupancy of a hashtable or hash-based data structure. 
+It represents the ratio of the number of elements (or entries) currently stored in the hashtable to the total number 
+of slots (or buckets) available in the hashtable.
+
+The load factor is calculated using the formula:
+
+Load Factor = Number of Elements / Total Number of Slots
+
+For example, if a hashtable has 50 elements stored in it and has a total of 100 slots available, the load factor would be 50/100 = 0.5.
+
+The load factor provides information about how much of the hashtable's capacity is being utilized. It indicates how "full" 
+the hashtable is and can be used as a measure of its efficiency.
+
+A high load factor (closer to 1) indicates that the hashtable is approaching its capacity or becoming full. This can lead to 
+an increased number of collisions, resulting in reduced performance and slower lookup times. In such cases, it may be necessary
+ to resize the hashtable by increasing the number of slots to maintain an acceptable load factor and improve performance.
+
+On the other hand, a low load factor (closer to 0) suggests that the hashtable has a lot of unused or empty slots. This can 
+result in inefficient use of memory and wasted space. In such cases, the hashtable may benefit from resizing or rehashing to 
+reduce the number of empty slots and improve memory utilization.
+
+Choosing an optimal load factor depends on the specific requirements of the application and the trade-off between memory usage
+ and performance. A commonly recommended load factor is around 0.7 to 0.8, as it provides a good balance between memory
+  utilization and performance.
+
+Monitoring and managing the load factor is essential to ensure the efficient operation of hashtables and to maintain optimal 
+performance in hash-based data structures.

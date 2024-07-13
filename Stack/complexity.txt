@@ -1,0 +1,28 @@
+complexity of stack-------------------------------------------------------------------
+
+The time and space complexity of stack operations depends on the underlying implementation. 
+
+For a stack implemented using an array or a dynamic array (such as a list or vector), 
+the time complexity of the basic stack operations are:
+
+1. Push: O(1) - Inserting an element at the top of the stack can be done in constant 
+time as it involves updating the top pointer or index.
+
+2. Pop: O(1) - Removing the top element from the stack also takes constant time since 
+it only involves updating the top pointer or index.
+
+3. Peek (or Top): O(1) - Accessing the top element of the stack can be done in constant
+ time as it is directly accessible.
+
+The space complexity of a stack implemented using an array or dynamic array is O(n),
+ where n is the number of elements in the stack. This is because the array needs to allocate 
+ memory for storing all the elements in the stack.
+
+For a stack implemented using a linked list, the time complexity of the basic stack operations
+ are the same as above: O(1) for push, pop, and peek. However, the space complexity for a
+  linked list implementation is O(n), where n is the number of elements in the stack, since each element 
+  requires a node in the linked list.
+
+It's important to note that these time and space complexities assume that the stack is implemented 
+correctly and efficiently. The actual performance may vary depending on factors such as the language,
+ compiler optimizations, and specific implementation details.

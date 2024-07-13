@@ -1,0 +1,15 @@
+Hashtables:
+1. **Phonebook**: Hashtables are commonly used in phonebook applications to store contact information. 
+The hash function maps names or phone numbers to their respective locations in the hashtable, allowing
+ for efficient lookup and retrieval of contact details.
+
+2. **Caching**: Hashtables are used in caching systems to store frequently accessed data, 
+such as web page content or database query results. The hashtable allows for fast lookup and
+ retrieval of cached data, improving overall system performance.
+
+3. **Spell Checkers**: Hashtables are used in spell checkers to store a dictionary of valid words. 
+The hashtable allows for quick lookup of words to check their spelling and provide suggestions for misspelled words.
+
+4. **Compiler Symbol Tables**: Hashtables are used in compilers and interpreters to store information
+ about identifiers (variables, functions, etc.) and their associated attributes. The hashtable facilitates 
+ efficient lookup and retrieval of symbols during the compilation or interpretation process.

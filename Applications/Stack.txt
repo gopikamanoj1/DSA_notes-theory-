@@ -1,0 +1,10 @@
+Stack:
+1. **Undo/Redo Operations**: Stacks are used in applications to implement the undo/redo functionality. 
+Each operation is pushed onto the stack, allowing users to revert or redo actions in a sequential manner.
+
+2. **Expression Evaluation**: Stacks are used in programming languages and calculators to evaluate arithmetic expressions.
+ The stack helps in evaluating the expression in the correct order, considering operators and parentheses.
+
+3. **Function Call Stack**: Stacks are used in programming languages to manage function calls. When a function is called, 
+its execution context is pushed onto the stack, and when the function completes, the context is popped from the stack
+ to resume execution at the calling point.

@@ -1,0 +1,11 @@
+
+Queue:
+1. **Print Spooling**: Queues are used in print spooling systems to manage print jobs. 
+Print requests are added to the queue and processed in a sequential manner, ensuring fairness and orderliness in printing.
+
+2. **Customer Service**: Queues are used in customer service systems to manage incoming customer requests or inquiries.
+ Customers are placed in a queue and served on a first-come-first-served basis, ensuring fairness in customer support.
+
+3. **Breadth-First Search (BFS)**: Queues are used in graph algorithms like BFS to explore neighboring vertices or 
+nodes in a breadth-first manner. The queue stores the next vertices to be visited, enabling the traversal of 
+a graph in a systematic and level-by-level manner.

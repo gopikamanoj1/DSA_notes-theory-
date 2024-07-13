@@ -1,0 +1,69 @@
+.linear and quadratic probing=--------------------------------------------------------
+
+
+Linear Probing and Quadratic Probing are two common techniques used in open addressing hashing to resolve
+ collisions when inserting elements into a hashtable. Here's an explanation of each technique:
+
+1. **Linear Probing**: In linear probing, when a collision occurs (i.e., when the desired index is already occupied), 
+the hashtable searches for the next available empty slot by incrementing the index linearly, one slot at a time. 
+It checks the next slot in a sequential manner until an empty slot is found.
+
+For example, if the desired index for an element is occupied, linear probing would check the next index, and if 
+that is occupied as well, it would check the next index, and so on, until an empty slot is found. This process 
+ensures that each element is stored in the hashtable in a contiguous manner, occupying the next available slot.
+
+Linear probing has the advantage of simplicity and cache-friendliness. However, it can lead to clustering, where 
+consecutive elements tend to cluster together in the hashtable, reducing the efficiency of lookup operations.
+
+2. **Quadratic Probing**: In quadratic probing, when a collision occurs, the hashtable searches for the next available
+ empty slot using a quadratic function to determine the probe sequence. Instead of incrementing the index linearly,
+  it increments the index by an increasing quadratic value (e.g., 1, 4, 9, 16, etc.).
+
+For example, if the desired index for an element is occupied, quadratic probing would check the next index 
+determined by adding 1^2, then the next index determined by adding 2^2, then 3^2, and so on, until an empty slot is found.
+ The use of a quadratic function helps distribute the elements more evenly in the hashtable and reduces clustering.
+
+Quadratic probing addresses the clustering issue present in linear probing by probing at larger intervals, which tends 
+to spread the elements out more evenly. However, it can still suffer from secondary clustering, where elements might 
+collide again after a certain number of probe attempts.
+
+Both linear probing and quadratic probing are techniques used to resolve collisions in open addressing hashing. 
+The choice between them depends on factors such as the expected number of collisions, the desired performance characteristics,
+ and the specific requirements of the application. Other techniques, such as double hashing or Robin Hood hashing, 
+ can also be used to address collision resolution in hashtables.
+
+
+
+15.double hashing-----------------------------------------------------------------
+
+
+Double hashing is a collision resolution technique used in open addressing hashing to handle collisions when inserting 
+elements into a hashtable. It involves using two hash functions instead of a single hash function like in linear probing 
+or quadratic probing. The two hash functions are used to calculate the probe sequence to find the next available empty slot.
+
+Here's how double hashing works:
+
+1. **Primary Hash Function**: The primary hash function is used to calculate the initial index for the element being inserted.
+ It maps the element's key to an index in the hashtable.
+
+2. **Secondary Hash Function**: The secondary hash function is used to calculate the step size or increment for the probe 
+sequence. It determines how many positions to skip in each iteration when searching for an empty slot.
+
+3. **Probe Sequence**: If a collision occurs at the desired index, the probe sequence is determined by the secondary hash 
+function. The secondary hash function is applied to the element's key, and the resulting value is added to the current
+ index to determine the next index to check. This process is repeated until an empty slot is found.
+
+For example, if the primary hash function maps a key to index 5, and the secondary hash function determines the step size 
+as 3, the probe sequence would be 5, 8, 11, 14, and so on, until an empty slot is found.
+
+Double hashing helps in distributing elements more evenly in the hashtable and reduces clustering compared to linear probing 
+or quadratic probing. It provides a wider range of probe sequences, allowing elements to be placed in different positions
+ based on the secondary hash function. This can result in better overall performance and reduced collision rates.
+
+The choice of the secondary hash function is crucial in double hashing. It should be carefully chosen to avoid patterns
+ and ensure a good distribution of probe sequences. Common techniques involve using prime numbers for the step size or 
+ employing a variation of the primary hash function.
+
+Double hashing is a flexible and efficient collision resolution technique, and it is widely used in implementations of 
+hashtables to handle collisions and improve performance.
+

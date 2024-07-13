@@ -1,0 +1,29 @@
+
+.complexity of queue-------------------------------------------------------------------
+
+
+The time and space complexity of queue operations also depend on the underlying implementation.
+
+For a queue implemented using an array or a dynamic array (such as a list or vector), the time 
+complexity of the basic queue operations are:
+
+1. Enqueue: O(1) - Inserting an element at the rear of the queue can be done in constant time 
+as it involves updating the rear pointer or index.
+
+2. Dequeue: O(1) - Removing the element from the front of the queue also takes constant time 
+since it only involves updating the front pointer or index.
+
+3. Peek (or Front): O(1) - Accessing the element at the front of the queue can be done in 
+constant time as it is directly accessible.
+
+The space complexity of a queue implemented using an array or dynamic array is O(n), where n is the
+ number of elements in the queue. This is because the array needs to allocate memory for storing all the elements in the queue.
+
+For a queue implemented using a linked list, the time complexity of the basic queue operations 
+remains the same as above: O(1) for enqueue, dequeue, and peek. The space complexity for a linked 
+list implementation is also O(n), where n is the number of elements in the queue, since each e
+lement requires a node in the linked list.
+
+Similarly to stacks, it's important to note that these time and space complexities assume that the queue 
+is implemented correctly and efficiently. The actual performance may vary depending on factors such as
+ the language, compiler optimizations, and specific implementation details.

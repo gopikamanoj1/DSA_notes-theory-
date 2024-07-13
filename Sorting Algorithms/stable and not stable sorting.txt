@@ -1,0 +1,30 @@
+.stable and not stable sorting--------------------------------------------------
+
+
+In the context of sorting algorithms, "stable" and "not stable" refer to the behavior of the
+ algorithm when there are multiple elements with equal keys.
+
+1. **Stable Sorting**: A stable sorting algorithm maintains the relative order of elements with
+ equal keys after the sorting operation. In other words, if there are two elements A and B with equal keys,
+  and A appears before B in the original unsorted list, then A will also appear before B in the sorted list.
+
+Examples of stable sorting algorithms:
+- Merge Sort
+- Insertion Sort
+- Bubble Sort
+
+2. **Not Stable Sorting**: A not stable sorting algorithm does not guarantee to maintain the relative order 
+of elements with equal keys after the sorting operation. The order of elements with equal keys may change during the sorting process.
+
+Examples of not stable sorting algorithms:
+- Selection Sort
+- Heap Sort
+- Quick Sort (in its basic implementation)
+
+It's important to note that whether a sorting algorithm is stable or not stable depends on the specific
+ implementation. For example, an unstable sorting algorithm like Quick Sort can be modified to be stable 
+ by incorporating additional checks and techniques.
+
+The stability of a sorting algorithm is significant in scenarios where the relative order of elements with
+ equal keys needs to be preserved, such as when sorting by multiple criteria or when working with complex
+  data structures that rely on the original order.

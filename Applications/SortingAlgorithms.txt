@@ -1,0 +1,12 @@
+Sorting Algorithms:
+1. **Database Sorting**: Sorting algorithms are used in database systems to order query results or to build indexes.
+ Efficient sorting algorithms such as Quicksort, Mergesort, or Heapsort are employed to process large volumes of data effectively.
+
+2. **Online Marketplace**: Sorting algorithms are used in online marketplaces to sort products based on different 
+criteria such as price, popularity, or ratings. Users can easily find and compare products in the desired order.
+
+3. **Music and Video Streaming**: Sorting algorithms are utilized in music and video streaming platforms to create
+ personalized playlists or recommend content based on user preferences and viewing history.
+
+4. **Flight Scheduling**: Sorting algorithms are employed in airline systems to optimize flight schedules based on departure time, 
+arrival time, or other criteria. This helps to minimize delays, improve efficiency, and provide a better travel experience.

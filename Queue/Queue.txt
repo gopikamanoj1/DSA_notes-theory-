@@ -1,0 +1,52 @@
+1.what is queue-------------------------------------------------------------
+
+A queue is a fundamental data structure in computer science that follows the First-In-First-Out (FIFO) principle.
+ It is an ordered collection of elements where the addition of new elements, called enqueue, is done at one end,
+  and the removal of elements, called dequeue, is done from the other end.
+
+In a queue, the element that has been in the queue the longest is at the front, and the element that has been in 
+the queue the shortest time is at the rear. This ordering ensures that the elements are processed in the same order
+ they were added to the queue.
+
+The main operations performed on a queue are:
+
+1. **Enqueue**: Adds an element to the rear or the end of the queue.
+2. **Dequeue**: Removes and returns the front or the first element of the queue.
+3. **Peek**: Returns the value of the front element without removing it.
+4. **IsEmpty**: Checks if the queue is empty or contains any elements.
+
+Queues can be implemented using various underlying data structures such as arrays, linked lists, or circular buffers.
+ They are used in a wide range of applications where elements need to be processed in the order they arrive, such as
+  task scheduling, job queues, breadth-first search, printer spooling, message passing, and more.
+
+2.types of queue-----------------------------------------------------------
+
+There are several types of queues that are commonly used in computer science and software development. Here are some
+ of the commonly used types of queues:
+
+1. **Simple Queue**: A simple queue is a basic implementation of a queue where elements are added at the rear and 
+removed from the front. It follows the FIFO (First-In-First-Out) principle, meaning that the first element inserted 
+is the first one to be removed.
+
+2. **Priority Queue**: A priority queue is a type of queue where each element has an associated priority. Elements
+ with higher priority are dequeued before elements with lower priority. Priority queues can be implemented using 
+ various data structures such as arrays, linked lists, binary heaps, or balanced search trees.
+
+3. **Circular Queue**: A circular queue is a variation of a simple queue in which the last element points back to
+ the first element, forming a circular structure. This allows efficient utilization of space in a fixed-size queue. 
+ When the rear reaches the end, it wraps around to the front if there is space available.
+
+4. **Deque (Double-ended Queue)**: A deque is a queue that allows insertion and deletion of elements from both ends. 
+It supports operations such as inserting at both ends (enqueue/dequeue) and peeking at both ends. It can be used as
+ both a queue and a stack.
+
+5. **Blocking Queue**: A blocking queue is a type of queue that blocks or waits when attempting to perform an enqueue 
+or dequeue operation on an empty or full queue, respectively. It provides synchronization mechanisms to handle concurrent
+ access by multiple threads.
+
+6. **Priority Blocking Queue**: A priority blocking queue is a combination of a priority queue and a blocking queue. 
+It is a thread-safe data structure that allows elements to be enqueued based on priority and blocks when attempting 
+to dequeue from an empty queue.
+
+These are some of the common types of queues used in various applications. The choice of queue type depends on the 
+specific requirements and characteristics of the problem at hand.
